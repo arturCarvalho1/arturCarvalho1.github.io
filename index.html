@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Artur Carvalho, desenvolvedor Java backend com experiência em APIs REST, microsserviços na AWS e análise de dados com Power BI.">
+    
+    <meta property="og:title" content="Artur Carvalho | Desenvolvedor Java Backend e BI">
+    <meta property="og:description" content="Desenvolvedor Java backend com experiência em APIs REST, microsserviços na AWS e análise de dados.">
+    <meta property="og:image" content="images/perfil.jpg">
+    <meta property="og:type" content="website">
+    
+    <title>Artur Carvalho | Desenvolvedor Java Backend e BI</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="rede" aria-hidden="true"></canvas>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="topo">
+        <a class="logo" href="#inicio" aria-label="Início">Artur Carvalho</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu" class="menu" aria-label="Principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <p class="hero-oi">Olá, eu sou</p>
+                <h1>Artur Carvalho</h1>
+                <p class="hero-papel">Eu construo <span id="digitando" class="digitando">APIs REST resilientes</span><span class="cursor" aria-hidden="true"></span></p>
+                <p class="hero-desc">
+                    Desenvolvedor Java backend com experiência em APIs REST, microsserviços na AWS e análise de dados com Power BI.
+                </p>
+                <div class="hero-acoes">
+                    <a class="btn btn-principal" href="#projetos">Ver projetos</a>
+                    <a class="btn btn-sec" href="#contato">Falar comigo</a>
+                </div>
+            </div>
+
+            <div class="palco">
+                <div class="orbita" aria-hidden="true">
+                    <span class="chip" style="--i:0">Java</span>
+                    <span class="chip" style="--i:1">Spring Boot</span>
+                    <span class="chip" style="--i:2">AWS</span>
+                    <span class="chip" style="--i:3">SQS/SNS</span>
+                    <span class="chip" style="--i:4">Docker</span>
+                    <span class="chip" style="--i:5">Power BI</span>
+                </div>
+                <div class="foto" id="foto">
+                    <span class="iniciais">AC</span>
+                    <img src="images/perfil1.jpg" alt="Foto de Artur Carvalho" onerror="this.remove()">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+            <div class="sobre-grid">
+                <div>
+                    <p>
+                        Sou desenvolvedor Java com quase 2 anos de experiência criando APIs REST
+                        e microsserviços orientados a eventos na AWS. Na Waka Tech, trabalhei em
+                        uma plataforma de gamificação e aprendizagem, integrando WhatsApp Business,
+                        sistemas de pagamento e mensageria (SQS/SNS), sempre com foco em alta
+                        disponibilidade e resiliência.
+                    </p>
+                    <p>
+                        Hoje sou assistente de análise de dados na Veracel Celulose, onde uso
+                        Power BI e Excel para auditar dados e acompanhar indicadores de uma
+                        operação industrial. Essa vivência une código e negócio: eu construo
+                        sistemas e entendo os números que mostram se eles dão resultado.
+                    </p>
+                </div>
+                <figure class="codigo">
+                    <figcaption>artur.js</figcaption>
+<pre><code><span class="p">const</span> artur = {
+  <span class="k">papel</span>: <span class="s">"Dev Java Backend"</span>,
+  <span class="k">stack</span>: [<span class="s">"Java"</span>, <span class="s">"Spring Boot"</span>, <span class="s">"AWS"</span>],
+  <span class="k">dados</span>: [<span class="s">"Power BI"</span>, <span class="s">"Excel"</span>],
+  <span class="k">Web</span>: [<span class="s">"Html"</span>, <span class="s">"Css"</span>, <span class="s">"JavaScript"</span>],
+  <span class="k">local</span>: <span class="s">"Eunápolis, BA"</span>,
+  <span class="k">aberto</span>: <span class="b">true</span>, <span class="c">// vagas Java ou dev + dados</span>
+};</code></pre>
+                </figure>
+            </div>
+        </section>
+
+        <section id="experiencia" class="secao">
+            <h2>Experiência</h2>
+            <div class="skills">
+                <div>
+                    <h3>Assistente de análise de dados, Veracel Celulose S/A</h3>
+                    <p class="meta">Jan. 2026 até o momento · Bahia, presencial</p>
+                    <p>
+                        Análise e auditoria de dados da operação industrial. Desenvolvo
+                        dashboards e relatórios em Power BI, trato e valido grandes volumes
+                        de dados no Excel e acompanho indicadores-chave de desempenho (KPIs),
+                        apontando inconsistências para melhorar a qualidade das informações.
+                    </p>
+                </div>
+                <div>
+                    <h3>Desenvolvedor Java, Waka Tech</h3>
+                    <p class="meta">Mar. 2024 a out. 2025 · Tempo integral, remoto</p>
+                    <p>
+                        Participei de um projeto de gamificação de uma plataforma educacional, conectando-a
+                        a sistemas de pagamento e comunicação. Implementei webhooks de gateways
+                        e integrações com a API do WhatsApp Business. Construí microsserviços
+                        em Java e Spring Boot com arquitetura orientada a eventos (SQS e SNS)
+                        na AWS, documentei APIs com Swagger e Postman e escrevi testes com
+                        JUnit e Mockito, em um time Scrum.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao">
+            <h2>Projetos</h2>
+            <div class="filtros" role="group" aria-label="Filtrar projetos">
+                <button class="filtro ativo" data-filtro="todos">Todos</button>
+                <button class="filtro" data-filtro="back">Back-end</button>
+                <button class="filtro" data-filtro="dados">Dados e BI</button>
+            </div>
+
+            <div class="projetos">
+                <article class="projeto" data-tag="back">
+                    <h3>Plataforma Waka Tech</h3>
+                    <p>
+                        Plataforma de aprendizagem com trilhas personalizadas e gamificação para
+                        instituições de ensino a distância. Acompanha em tempo real
+                        cursos, práticas, interações via WhatsApp e feedbacks 360º. Meu papel:
+                        Desenvolver features do produto.
+                    </p>
+                    <ul class="techs"><li>Java</li><li>Spring Boot</li><li>AWS</li><li>SQS/SNS</li><li>PostgreSQL</li><li>MongoDB</li><li>Docker</li></ul>
+                    <div class="links"><span>Projeto corporativo, código privado</span></div>
+                </article>
+
+                <article class="projeto" data-tag="back">
+                    <h3>FocusTimer</h3>
+                    <p>
+                        Solução interna da XMob que ajuda consultores a manter foco e eficiência
+                        nas atividades diárias, com ganho de produtividade para a equipe.
+                    </p>
+                    <ul class="techs"><li>Java</li><li>Spring Boot</li><li>Spring Cloud</li><li>MongoDB</li><li>Maven</li><li>API REST</li></ul>
+                    <div class="links">
+                        <a href="https://github.com/tribos-dev/produdoro-t2025-01-s02" target="_blank" rel="noopener">Código no GitHub</a>
+                    </div>
+                    <div class="links">
+                        <a href="https://pomofocus.io/" target="_blank" rel="noopener">Projeto FocusTimer</a>
+                    </div>
+                </article>
+
+                <article class="projeto" data-tag="dados">
+                    <h3>Dashboards e auditoria de dados industriais</h3>
+                    <p>
+                        Dashboards em Power BI e rotinas de validação em Excel que dão visibilidade
+                        aos indicadores da operação industrial e ajudam a identificar inconsistências
+                        nos dados. Feito na Veracel Celulose.
+                    </p>
+                    <ul class="techs"><li>Power BI</li><li>Excel</li><li>KPIs</li><li>Visualização de dados</li></ul>
+                    <div class="links"><span>Projeto corporativo, dados confidenciais</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="secao">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div>
+                    <h3>Backend</h3>
+                    <p>Java, Spring Boot, Spring Data, Spring MVC, Spring Security, Spring Cloud, JPA, Hibernate, APIs RESTful</p>
+                </div>
+                <div>
+                    <h3>Arquitetura e cloud</h3>
+                    <p>Microsserviços, arquitetura orientada a eventos, DDD, Cloud First, AWS (EC2, SQS, SNS), Docker</p>
+                </div>
+                <div>
+                    <h3>Bancos de dados</h3>
+                    <p>PostgreSQL, MySQL, MongoDB, SQL</p>
+                </div>
+                <div>
+                    <h3>Qualidade e processos</h3>
+                    <p>JUnit, Mockito, Swagger, Postman, Scrum, JIRA, Git, GitHub, GitFlow</p>
+                </div>
+                <div>
+                    <h3>Dados e BI</h3>
+                    <p>Power BI, Microsoft Excel, dashboards, KPIs, visualização e auditoria de dados</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+            <p>
+                Estou aberto a oportunidades de trabalho remoto ou presencial, especialmente em
+                vagas de desenvolvedor Java backend ou que envolvam análise de dados. Se você
+                tem uma vaga ou projeto interessante, entre em contato!
+            </p>
+
+            <p class="redes">
+                <a href="https://github.com/arturCarvalho1" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/artur-pedroso-java/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://wa.me/73981959755" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="mailto:arturpedroso5050@gmail.com" target="_blank" rel="noopener">Email</a>
+                <a href="https://www.instagram.com/artuugz_/" target="_blank" rel="noopener">Instagram</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
